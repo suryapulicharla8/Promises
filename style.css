@@ -1,0 +1,11 @@
+p {
+    color:red;
+    background-color: gold;
+}
+pre {
+    color:aqua;
+    background-color: brown;
+}
+pre:hover {
+    transform: translateX(30px);
+}

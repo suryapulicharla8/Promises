@@ -5,9 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promises</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Js-Handson-13-Promises</h1>
+    <!-- <h1>Js-Handson-13-Promises</h1> -->
+    <p>1.Write one example explaining how you can write a callback function ?</p>
+    <pre>function task1(){
+        console.log('hello surya')
+    }
+    function task2(){
+        console.log('bye surya')
+    }
+    task1();
+    task2();
+    </pre>
+    <p>2."Write callback function to print numbers from 1 to 7, in which 1 should be printed after 1 sec , 2 should be printed after 2 sec, 3 should be printed after 3 sec and so on. 
+
+        Explain callback hell.
+        Numbers
+        1
+        2
+        3
+        4
+        5
+        6
+        7"</p>
+    <pre>function one(){
+        console.log('1')
+    }
+    setTimeout(one,1000)
+    
+    function two(){
+        console.log('2')
+    }
+    setTimeout(two,1000)
+    
+    function three(){
+        console.log('3')
+    }
+    setTimeout(three,1000)
+    
+    function four(){
+        console.log('3')
+    }
+    setTimeout(four,1000)
+    function five(){
+        console.log('3')
+    }
+    setTimeout(five,1000)
+    </pre>
+    <p>3."Write promise function to print numbers from 1 to 7, in which 1 should be printed after 1 sec , 2 should be printed after 2 sec, 3 should be printed after 3 sec and so on. 
+
+        Numbers
+        1
+        2
+        3
+        4
+        5
+        6
+        7"</p>
+    <pre>function myfun1(){
+        console.log(1)
+    }
+    setTimeout(myfun1,1000);
+    function myfun2(){
+        console.log(2)
+    }setTimeout(myfun2,2000);
+    
+    function myfun3(){
+        console.log(3)
+    }setTimeout(myfun3,3000);
+    
+    function myfun4(){
+        console.log(4)
+    }setTimeout(myfun4,4000)
+    
+    function myfun5(){
+        console.log(5)
+    }setTimeout(myfun5,5000)
+    
+    function myfun6(){
+        console.log(6)
+    }setTimeout(myfun6,6000)
+    
+    function myfun7(){
+        console.log(7)
+    }setTimeout(myfun7,7000)</pre>
+    <p>4.Create a promise function accepting a argument, if yes is passed to the function then it should go to resolved state and print Promise Resolved, and if nothing is passed then it should go to reject state and catch the error and print Promise Rejected </p>
+    <pre> var Promise=new Promise((resolved,reject){
+        var x="surya"
+        var y="Surya"
+        
+        if(x==y){
+            resolved();
+        }
+        else{
+            reject();
+        }
+        
+    })
+    Promise.then(()=>{
+        console.log("resolved")
+
+    })
+    Promise.catch(()=>{
+        console.log("reject")
+    })
+
+
+
+
+
+
+    </pre>
+    <p>5.Create examples to explain callback function</p>
+    <pre> 
+        function myFirst(){
+            console.log("hello")
+        }
+        function mySecond(){
+            console.log('Goodbye')
+        }
+        myFirst();
+        mySecond();
+        <!-- function myFirst(){
+            myDisplayer("hello")
+        }
+        function mySecond(){
+            myDisplayer('Goodbye')
+        }
+        myFirst();
+        mySecond(); -->
+    </pre>
+    <!-- <p>6.Create examples to explain callback hell function</p> -->
+    <pre></pre>
+    <p>7.Create examples to explain promises function</p>
+    <pre>var promise=new promise((resolved,reject){
+        let a=10;
+        let b=11;
+        if(a==b){
+            resolved();
+        }else{
+            reject();
+        }
+    })
+    promise.then(()=>{
+        console.log('haii')
+    })
+    promise.catch(()=>{
+        console.log("byee")
+    })
+ </pre>
+    <!-- <p>8.Create examples to explain async await function</p> -->
+    <pre></pre>
+    <!-- <p>9.Create examples to explain promise.all function</p> -->
     <script src="./main.js"></script>
 </body>
 </html>
